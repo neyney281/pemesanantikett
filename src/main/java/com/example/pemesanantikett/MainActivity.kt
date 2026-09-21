@@ -1,4 +1,4 @@
-package com.example.pemesanantikett // Sesuaikan dengan nama package project kamu
+package com.example.pemesanantikett 
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -65,7 +65,6 @@ fun TicketBookingScreen() {
         )
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Card Container Utama
         Card(
             modifier = Modifier
                 .fillMaxWidth()
@@ -108,7 +107,6 @@ fun TicketBookingScreen() {
                     }
                 }
 
-                // 2. Card Jumlah Tiket (+ / -)
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     colors = CardDefaults.cardColors(containerColor = Color.White),
@@ -144,7 +142,7 @@ fun TicketBookingScreen() {
                                 )
                             }
 
-                            // Tampilan Angka Jumlah Tiket
+                       
                             Box(
                                 modifier = Modifier
                                     .weight(1f)
@@ -161,7 +159,6 @@ fun TicketBookingScreen() {
                                 )
                             }
 
-                            // Tombol Tambah (+)
                             IconButton(
                                 onClick = { ticketCount++ },
                                 modifier = Modifier
@@ -179,7 +176,6 @@ fun TicketBookingScreen() {
                     }
                 }
 
-                // 3. Card Total Bayar
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     colors = CardDefaults.cardColors(containerColor = Color.White),
@@ -205,7 +201,6 @@ fun TicketBookingScreen() {
 
                 Spacer(modifier = Modifier.weight(1f))
 
-                // 4. Tombol RESET
                 Button(
                     onClick = { ticketCount = 1 },
                     modifier = Modifier
